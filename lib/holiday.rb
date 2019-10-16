@@ -50,6 +50,7 @@ def all_winter_holiday_supplies(holiday_hash)
     winter_supplies = Array.new
     winter_supplies << supplies if !winter_supplies.include?(supplies)
   end
+  winter_supplies
 end
 
 def all_supplies_in_holidays(holiday_hash)
