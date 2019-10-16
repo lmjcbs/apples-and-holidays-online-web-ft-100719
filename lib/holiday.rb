@@ -78,7 +78,7 @@ def all_holidays_with_bbq(holiday_hash)
   holidays_with_bbq = Array.new
   holiday_hash.each do |season, event|
     holiday_hash[season].each do |event, supplies|
-      supplies.each { |e| holidays_with_bbq << evnt if e == "BBQ"}
+      supplies.each { |e| holidays_with_bbq << event if e == "BBQ"}
     end
   end
   holidays_with_bbq
