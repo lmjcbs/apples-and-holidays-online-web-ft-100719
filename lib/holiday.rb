@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
       array_name = name.to_s.split('_')
       formatted_name = array_name.map { |e| e.capitalize!  }
       formatted_supplies = supplies.join(', ')
-      puts "  #{formatted_name.join(' ')}: "
+      puts "  #{formatted_name.join(' ')}: #{formatted_supplies}"
     end
   end
 end
