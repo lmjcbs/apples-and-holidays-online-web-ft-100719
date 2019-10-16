@@ -49,7 +49,7 @@ def all_winter_holiday_supplies(holiday_hash)
   winter_supplies = Array.new
   holiday_hash[:winter].each do |event, supplies|
     supplies.each { |item| winter_supplies << item }
-    !winter_supplies.include?(supplies)
+    
   end
   winter_supplies
 end
