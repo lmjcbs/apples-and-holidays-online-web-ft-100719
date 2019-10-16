@@ -48,7 +48,7 @@ def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
   holiday_hash[:winter].each do |event, supplies|
     winter_supplies = Hash.new
-    winter_supplies << supplies << "Lights" if !supplies.include?("Lights")
+    winter_supplies << supplies << if !winter_supplies.include?("Lights")
   end
 end
 
