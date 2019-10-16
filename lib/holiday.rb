@@ -77,6 +77,6 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holidays_with_bbq = Array.new
   holiday_hash.each do |season, event|
-
+    holiday_hash[event]
   end
 end
