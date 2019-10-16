@@ -77,7 +77,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holidays_with_bbq = Array.new
   holiday_hash.each do |season, event|
-    holiday_hash[season][event].each { |e| holidays_with_bbq << e if e == "BBQ"}
+    event.each { |e| holidays_with_bbq << e if e == "BBQ"}
   end
   holidays_with_bbq
 end
